@@ -1,0 +1,57 @@
+{% load i18n %}
+
+<div class="recent_news_area section__padding" id="news">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="section_title text-center mb-70">
+                    <h3 class="mb-45">{% translate 'Новости' %}</h3>
+                    <p>{% translate 'Здесь события, праздники, лекции, и новости которые произошли недавно.' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for new in news %}
+                <div class="col-md-6">
+                    <div class="single__news">
+                        <div class="thumb">
+                            <a href="{{ new.get_absolute_url }}">
+                                <img class="news_image" src="{{ new.get_image }}" alt=""
+                                     style="width: 500px; height: 400px; object-position: center">
+                            </a>
+                        </div>
+                        <div class="news_info">
+                            <a href="{{ new.get_absolute_url }}">
+                                <h4>{{ new.title }}</h4>
+                            </a>
+                            <p class="d-flex align-items-center"><span><i
+                                    class="flaticon-calendar-1"></i>{{ new.created_at }}</span>
+
+                                <span> <i
+                                        class="flaticon-comment"></i> {{ new.count_comments }} {% translate new.comment %}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+
+        <div class="d-flex justify-content-center">
+            {% if '/uz' in request.path %}
+                <a href="{% url 'blog' %}" class="btn btn-warning btn-lg button1" style="padding: 10px;">Ko'proq
+                    Yangiliklar...</a>
+            {% elif '/ru' in request.path %}
+                <a href="{% url 'blog' %}" class="btn btn-warning btn-lg button1" style="padding: 10px;">Еще
+                    Новости...</a>
+            {% elif '/en/' in request.path %}
+                <a href="{% url 'blog' %}" class="btn btn-warning btn-lg button1" style="padding: 10px;">More
+                    news...</a>
+            {% else %}
+                <a href="{% url 'blog' %}" class="btn btn-warning btn-lg button1" style="padding: 10px;">Еще
+                    Новости...</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block main %}
+
+
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="posts-list container">
+
+                <div class="single__news">
+
+                    <div class="thumb">
+                        <img class="news_image1 img-fluid" src="{{ new.get_image }}" alt=""
+                             style="width: 1000px; height: 600px">
+                    </div>
+
+                    <div class="blog_details">
+                        <h2>{{ new.title }}</h2>
+
+                        <ul class="blog-info-link mt-3 mb-4">
+                            <li><a href="#"><i class="fa fa-comments"></i>{{ new.count_comments }} {% translate new.comment %}</a></li>
+                        </ul>
+                        <p class="excert">
+                            {{ new.subtitle }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comments-area">
+                    <h4>{{ new.count_comments }} {% translate new.comment %}</h4>
+                    {% for comment in comments %}
+                        <div class="comment-list">
+                            <div class="single-comment justify-content-between d-flex">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="thumb">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p class="comment">
+                                            {{ comment.text }}
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h5>
+                                                    {{ comment.author }}
+                                                </h5>
+                                                <p class="date">{{ comment.created_at }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                <div class="comment-form">
+
+                    <h4>{% translate 'Оставьте Комментарий' %}</h4>
+
+                    <form class="form-contact comment_form" action="{% url 'save_comment' new.pk %}" id="commentForm"
+                          method="post">
+                        {% csrf_token %}
+
+                        {{ comment_form.as_p }}
+
+                        <div class="form-group">
+                            <button type="submit" class="button button-contactForm btn_1 boxed-btn">Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

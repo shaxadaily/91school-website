@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-28 16:43+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\blog\models.py:45
+msgid "Автор"
+msgstr "Muallif"
+
+#: .\blog\models.py:46
+msgid "Текст"
+msgstr "Izohingiz"
+
+#: .\blog\templates\blog\components\blog\_single_blog.html:57
+#, fuzzy
+#| msgid "Комментарий"
+msgid "Оставьте Комментарий"
+msgstr "Izoh"
+
+#: .\blog\templates\blog\components\index\_gallery.html:21
+#: .\templates\components\_navbar.html:54
+msgid "Галерея"
+msgstr "Galereya"
+
+#: .\blog\templates\blog\components\index\_gallery.html:25
+msgid "Все"
+msgstr "hammasi"
+
+#: .\blog\templates\blog\components\index\_gallery.html:26
+msgid "Кабинеты"
+msgstr "Kabinetlar"
+
+#: .\blog\templates\blog\components\index\_gallery.html:27
+msgid "Спорт Зал"
+msgstr "Sport zali"
+
+#: .\blog\templates\blog\components\index\_gallery.html:28
+msgid "Актовый Зал"
+msgstr "Majlislar zali"
+
+#: .\blog\templates\blog\components\index\_gallery.html:29
+msgid "Улица"
+msgstr "Ko'cha"
+
+#: .\blog\templates\blog\components\index\_latest_news.html:8
+#: .\templates\components\_navbar.html:56
+msgid "Новости"
+msgstr "Yangiliklar"
+
+#: .\blog\templates\blog\components\index\_latest_news.html:9
+msgid "Здесь события, праздники, лекции, и новости которые произошли недавно."
+msgstr ""
+"Bu erda voqealar, bayramlar, ma'ruzalarva yangiliklar yaqinda sodir bo'lgan."
+
+#: .\blog\templates\blog\components\index\_latest_news.html:44
+
+#: .\blog\templates\blog\components\index\_slider.html:13
+#: .\blog\templates\blog\components\index\_slider.html:33
+#: .\templates\base.html:8
+msgid "91 Школа"
+msgstr "91 Maktab"
+
+#: .\blog\templates\blog\components\index\_slider.html:16
+#: .\blog\templates\blog\components\index\_slider.html:36
+#: .\templates\components\_navbar.html:71
+msgid "Оставить Заявку"
+msgstr "Arizani Qoldiring"
+
+#: .\blog\templates\blog\components\index\_workers.html:7
+#: .\templates\components\_navbar.html:58
+msgid "Персонал"
+msgstr "Xodimlar"
+
+#: .\blog\templates\blog\components\index\_workers.html:22
+msgid "Севара"
+msgstr "Sevara"
+
+#: .\blog\templates\blog\components\index\_workers.html:34
+msgid "Азиза Джураевна"
+msgstr "Aziza Djuraevna"
+
+#: .\blog\templates\blog\components\index\_workers.html:46
+msgid "Наргиза Каримовна"
+msgstr "Nargiza Karimovna"
+
+#: .\blog\templates\blog\contact.html:10
+msgid "Спасибо"
+msgstr "Rahmat"
+
+#: .\blog\templates\blog\contact.html:10
+msgid "Ждите обратной связи!"
+msgstr "Fikr-mulohazalarni kuting!"
+
+#: .\blog\templates\blog\contact.html:24
+msgid "Заполните Форму"
+msgstr "Shaklni To'ldiring"
+
+#: .\blog\templates\blog\contact.html:38 .\blog\templates\blog\contact.html:39
+msgid "Расскажите о себе / о вашем ребенке"
+msgstr "O'zingiz / chaqalog'ingiz haqida gapiring"
+
+#: .\blog\templates\blog\contact.html:47 .\blog\templates\blog\contact.html:48
+msgid "Введите ваше имя"
+msgstr "Ismingizni kiriting"
+
+#: .\blog\templates\blog\contact.html:55 .\blog\templates\blog\contact.html:56
+msgid "Введите адрес электронной почты"
+msgstr "Elektron pochta manzilini kiriting"
+
+#: .\blog\templates\blog\contact.html:62
+msgid "Номер телефона"
+msgstr "Telefon raqami"
+
+#: .\blog\templates\blog\contact.html:63
+msgid "Номер телефона: +998901232323"
+msgstr "Telefon raqami: +998901232323"
+
+#: .\blog\templates\blog\contact.html:73
+msgid "Выберите класс"
+msgstr "Sinfni tanlang"
+
+#: .\blog\templates\blog\contact.html:74
+msgid "1 класс"
+msgstr "1 sinf"
+
+#: .\blog\templates\blog\contact.html:75
+msgid "2 класс"
+msgstr "2 sinf"
+
+#: .\blog\templates\blog\contact.html:76
+msgid "3 класс"
+msgstr "3 sinf"
+
+#: .\blog\templates\blog\contact.html:77
+msgid "4 класс"
+msgstr "4 sinf"
+
+#: .\blog\templates\blog\contact.html:78
+msgid "5 класс"
+msgstr "5 sinf"
+
+#: .\blog\templates\blog\contact.html:79
+msgid "6 класс"
+msgstr "6 sinf"
+
+#: .\blog\templates\blog\contact.html:80
+msgid "7 класс"
+msgstr "7 sinf"
+
+#: .\blog\templates\blog\contact.html:81
+msgid "8 класс"
+msgstr "8 sinf"
+
+#: .\blog\templates\blog\contact.html:82
+msgid "9 класс"
+msgstr "9 sinf"
+
+#: .\blog\templates\blog\contact.html:83
+msgid "10 класс"
+msgstr "10 sinf"
+
+#: .\blog\templates\blog\contact.html:84
+msgid "11 класс"
+msgstr "11 sinf"
+
+#: .\blog\templates\blog\contact.html:93
+msgid "Отправить"
+msgstr "Yuborish"
+
+#: .\blog\templates\blog\contact.html:103
+msgid "Яккасарайский Район"
+msgstr "Yakkasaroy Tumani"
+
+#: .\blog\templates\blog\contact.html:104
+msgid "Ориентир: Итальянские Посольства"
+msgstr "Italiya Elchixonalari"
+
+#: .\blog\templates\blog\contact.html:111
+msgid "Понедельник-Суббота"
+msgstr "Dushanba-Shanba"
+
+#: .\blog\templates\blog\contact.html:118
+msgid "Отправляйте ваши заявки в любое время!"
+msgstr "Arizalaringizni istalgan vaqtda yuboring!"
+
+#: .\blog\templates\blog\index.html:24 .\templates\components\_navbar.html:60
+msgid "Местоположение"
+msgstr "Joylashuv"
+
+#: .\templates\components\_navbar.html:34
+msgid "Главная"
+msgstr "Bosh sahifa"
+
+#: .\templates\components\_navbar.html:38
+msgid "Языки"
+msgstr "Tillar"
+
+msgid "Комментарий"
+msgstr "Izoh"
+
+msgid "Комментария"
+msgstr "Izohlar"
+
+msgid "Комментариев"
+msgstr "Izohlar"

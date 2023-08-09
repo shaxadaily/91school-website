@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block main %}
+
+<style>
+    .scale {
+        display: inline-block; /* Строчно-блочный элемент */
+        overflow: hidden; /* Скрываем всё за контуром */
+    }
+
+    .scale img {
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+    .scale img:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+    }
+</style>
+
+
+
+<section class="blog_area section-padding">
+    <div class="container">
+        <div class="row" >
+            {% for new in news %}
+                <div class="col-lg-8 mb-5 mb-lg-0 container" >
+
+                    <article class="blog_item  scale" style="width: 690px; height: 630px" >
+
+                        <div class="blog_item_img">
+                            <a href="{{ new.get_absolute_url }}">
+                            <img class="card-img rounded-0" src="{{ new.get_image }}"
+                                 style="height: 345px; object-fit: cover; object-position: 50% 30%;" alt="">
+                            </a>
+
+                            <a href="{{ new.get_absolute_url }}" class="blog_item_date">
+
+
+                                {# TODO я взял словарь, и проверил если key = new так как они обьекты #}
+
+                                <h3>{{ new.created_at.day }}</h3>
+
+{#                                        <p>{{ new.month_name }}</p>#}
+                            <p>{% translate new.month_name %}</p>
+                            </a>
+                        </div>
+
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="{{ new.get_absolute_url }}">
+                                <h2>{{ new.title }}</h2>
+                            </a>
+                            <p>{{ new.subtitle }}</p>
+                            <ul class="blog-info-link">
+                                <li><a href="{{ new.get_absolute_url }}"><i class="fa fa-comments"></i> {{ new.count_comments }} {% translate new.comment %}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% endblock main %}
+

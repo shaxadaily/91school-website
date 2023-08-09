@@ -1,0 +1,72 @@
+{% load static i18n %}
+
+<style>
+    .scale {
+        display: inline-block; /* Строчно-блочный элемент */
+        overflow: hidden; /* Скрываем всё за контуром */
+    }
+
+    .scale img {
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+    .scale img:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+    }
+</style>
+
+<div class="margin-bottom">
+<section class="container p-t-3" id="workers">
+    <div class="row">
+        <div class="d-flex justify-content-center col-lg-12">
+            <h1 class="gallery-title">{% translate 'Персонал' %}</h1>
+        </div>
+    </div>
+</section>
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+
+    <div class="container p-t-0 m-t-2 carousel-inner">
+        <div class="row carousel active m-t-0">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-400 scale">
+                        <img class="img-fluid" style="width: 100%" src="https://91school.uz/staticfiles/assets/img/2.jpg" alt="Carousel 1">
+                    </div>
+                    <div class="card-block d-flex justify-content-center p-t-2">
+                        <h2>
+                            <a href>{% translate 'Севара' %}</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-400 scale">
+                        <img class="img-fluid" style="width: 100%" src="https://91school.uz/staticfiles/assets/img/1.jpg" alt="Carousel 2">
+                    </div>
+                    <div class="card-block d-flex justify-content-center p-t-2">
+                        <h2>
+                            <a href>{% translate 'Азиза Джураевна' %}</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-400 scale">
+                        <img class="img-fluid" style="width: 100%" src="https://91school.uz/staticfiles/assets/img/3.jpg" alt="Carousel 3">
+                    </div>
+                    <div class="card-block d-flex justify-content-center p-t-2">
+                        <h2>
+                            <a href>{% translate 'Наргиза Каримовна' %}</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+

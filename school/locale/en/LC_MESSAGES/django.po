@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-28 16:43+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\blog\models.py:45
+msgid "Автор"
+msgstr "Author"
+
+#: .\blog\models.py:46
+msgid "Текст"
+msgstr "Text"
+
+#: .\blog\templates\blog\components\blog\_single_blog.html:57
+#, fuzzy
+#| msgid "Комментарий"
+msgid "Оставьте Комментарий"
+msgstr "Comment"
+
+#: .\blog\templates\blog\components\index\_gallery.html:21
+#: .\templates\components\_navbar.html:54
+msgid "Галерея"
+msgstr "Gallery"
+
+#: .\blog\templates\blog\components\index\_gallery.html:25
+msgid "Все"
+msgstr "All"
+
+#: .\blog\templates\blog\components\index\_gallery.html:26
+msgid "Кабинеты"
+msgstr "Cabinets"
+
+#: .\blog\templates\blog\components\index\_gallery.html:27
+msgid "Спорт Зал"
+msgstr "Sports Hall"
+
+#: .\blog\templates\blog\components\index\_gallery.html:28
+msgid "Актовый Зал"
+msgstr "Assembly Hall"
+
+#: .\blog\templates\blog\components\index\_gallery.html:29
+msgid "Улица"
+msgstr "Street"
+
+#: .\blog\templates\blog\components\index\_latest_news.html:8
+#: .\templates\components\_navbar.html:56
+msgid "Новости"
+msgstr "News"
+
+#: .\blog\templates\blog\components\index\_latest_news.html:9
+msgid "Здесь события, праздники, лекции, и новости которые произошли недавно."
+msgstr "Here are events, holidays, lectures, and news that happened recently"
+
+#: .\blog\templates\blog\components\index\_latest_news.html:44
+
+#: .\blog\templates\blog\components\index\_slider.html:13
+
+msgid "91 Школа"
+msgstr "91 School"
+
+#: .\blog\templates\blog\components\index\_slider.html:
+msgid "Оставить Заявку"
+msgstr "Apply"
+
+#: .\blog\templates\blog\components\index\_workers.html:7
+#: .\templates\components\_navbar.html:58
+msgid "Персонал"
+msgstr "Staff"
+
+#: .\blog\templates\blog\components\index\_workers.html:22
+msgid "Севара"
+msgstr "Sevara"
+
+#: .\blog\templates\blog\components\index\_workers.html:34
+msgid "Азиза Джураевна"
+msgstr "Aziza Djuraevna"
+
+#: .\blog\templates\blog\components\index\_workers.html:46
+msgid "Наргиза Каримовна"
+msgstr "Nargiza Karimovna"
+
+#: .\blog\templates\blog\contact.html:10
+msgid "Спасибо"
+msgstr "Thank you"
+
+#: .\blog\templates\blog\contact.html:10
+msgid "Ждите обратной связи!"
+msgstr "We will respond shortly!"
+
+#: .\blog\templates\blog\contact.html:24
+msgid "Заполните Форму"
+msgstr "Fill out the form"
+
+#: .\blog\templates\blog\contact.html:38 .\blog\templates\blog\contact.html:39
+msgid "Расскажите о себе / о вашем ребенке"
+msgstr "Tell about yourself / your child"
+
+#: .\blog\templates\blog\contact.html:47 .\blog\templates\blog\contact.html:48
+msgid "Введите ваше имя"
+msgstr "Your name"
+
+#: .\blog\templates\blog\contact.html:55 .\blog\templates\blog\contact.html:56
+msgid "Введите адрес электронной почты"
+msgstr "Your e-mail"
+
+#: .\blog\templates\blog\contact.html:62
+msgid "Номер телефона"
+msgstr "Phone number"
+
+#: .\blog\templates\blog\contact.html:63
+msgid "Номер телефона: +998901232323"
+msgstr "Phone number: +998901232323"
+
+#: .\blog\templates\blog\contact.html:73
+msgid "Выберите класс"
+msgstr "Choose a grade"
+
+#: .\blog\templates\blog\contact.html:74
+msgid "1 класс"
+msgstr "1 grade"
+
+#: .\blog\templates\blog\contact.html:75
+msgid "2 класс"
+msgstr "2 grade"
+
+#: .\blog\templates\blog\contact.html:76
+msgid "3 класс"
+msgstr "3 grade"
+
+#: .\blog\templates\blog\contact.html:77
+msgid "4 класс"
+msgstr "4 grade"
+
+#: .\blog\templates\blog\contact.html:78
+msgid "5 класс"
+msgstr "5 grade"
+
+#: .\blog\templates\blog\contact.html:79
+msgid "6 класс"
+msgstr "6 grade"
+
+#: .\blog\templates\blog\contact.html:80
+msgid "7 класс"
+msgstr "7 grade"
+
+#: .\blog\templates\blog\contact.html:81
+msgid "8 класс"
+msgstr "8 grade"
+
+#: .\blog\templates\blog\contact.html:82
+msgid "9 класс"
+msgstr "9 grade"
+
+#: .\blog\templates\blog\contact.html:83
+msgid "10 класс"
+msgstr "10 grade"
+
+#: .\blog\templates\blog\contact.html:84
+msgid "11 класс"
+msgstr "11 grade"
+
+#: .\blog\templates\blog\contact.html:93
+msgid "Отправить"
+msgstr "Send"
+
+#: .\blog\templates\blog\contact.html:103
+msgid "Яккасарайский Район"
+msgstr "Yakkasaray District"
+
+#: .\blog\templates\blog\contact.html:104
+msgid "Ориентир: Итальянские Посольства"
+msgstr "Near Italian Embassy"
+
+#: .\blog\templates\blog\contact.html:111
+msgid "Понедельник-Суббота"
+msgstr "Monday-Saturday"
+
+#: .\blog\templates\blog\contact.html:118
+msgid "Отправляйте ваши заявки в любое время!"
+msgstr "Send your applications at anytime!"
+
+#: .\blog\templates\blog\index.html:24 .\templates\components\_navbar.html:60
+msgid "Местоположение"
+msgstr "Location"
+
+#: .\templates\components\_navbar.html:34
+msgid "Главная"
+msgstr "Main"
+
+#: .\templates\components\_navbar.html:38
+msgid "Языки"
+msgstr "Languages"
+
+msgid "Комментарий"
+msgstr "Comment"
+
+msgid "Комментария"
+msgstr "Comments"
+
+msgid "Комментариев"
+msgstr "Comments"

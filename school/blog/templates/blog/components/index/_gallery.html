@@ -1,0 +1,94 @@
+{% load i18n %}
+<style>
+    .scale {
+        display: inline-block; /* Строчно-блочный элемент */
+        overflow: hidden; /* Скрываем всё за контуром */
+    }
+
+    .scale img {
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+    .scale img:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+    }
+</style>
+
+<div class="container mareetop" id="gallery">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1 class="gallery-title">{% translate 'Галерея' %}</h1>
+    </div>
+
+    <div align="center">
+        <button class="btn btn-default filter-button" data-filter="all">{% translate 'Все' %}</button>
+        <button class="btn btn-default filter-button" data-filter="cabinet">{% translate 'Кабинеты' %}</button>
+        <button class="btn btn-default filter-button" data-filter="sport">{% translate 'Спорт Зал' %}</button>
+        <button class="btn btn-default filter-button" data-filter="actovy">{% translate 'Актовый Зал' %}</button>
+        <button class="btn btn-default filter-button" data-filter="street">{% translate 'Улица' %}</button>
+    </div>
+    <br/>
+
+<div class="justify-content-center">
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter street scale">
+        <img src="/media/images/street/photo_3_2023-07-18_00-25-03.jpg" style="width: 340px; height: 255px; object-fit: cover" class="
+             img-responsive">
+    </div>
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter street scale">
+        <img src="/media/images/street/photo_2_2023-07-18_00-23-06.jpg" style="width: 340px; height: 255px; object-fit: cover" class="
+             img-responsive">
+    </div>
+
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter street scale">
+        <img src="/media/images/street/photo_1_2023-07-18_00-25-03.jpg" style="width: 340px; height: 255px; object-fit: cover" class="
+             img-responsive">
+    </div>
+
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cabinet scale">
+        <img src="/media/images/cabinet/photo_2_2023-07-18_00-24-52.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cabinet scale">
+        <img src="/media/images/cabinet/photo_4_2023-07-18_00-25-03.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cabinet scale">
+        <img src="/media/images/cabinet/photo_5_2023-07-18_00-25-03.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter actovy  scale">
+        <img src="/media/images/actovy/photo_2_2023-07-18_00-25-06.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter actovy scale">
+        <img src="/media/images/actovy/photo_1_2023-07-18_00-25-06.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+
+
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sport scale">
+        <img src="/media/images/sport/photo_1_2023-07-18_00-23-06.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sport scale">
+        <img src="/media/images/sport/photo_1_2023-07-18_00-23-57.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sport scale">
+        <img src="/media/images/sport/photo_2_2023-07-18_00-23-57.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sport scale">
+        <img src="/media/images/sport/photo_3_2023-07-18_00-23-06.jpg" style="width: 340px; height: 255px; object-fit: cover"
+             class="img-responsive">
+    </div>
+
+</div>
+</div>
